@@ -37,7 +37,7 @@ class _PhoneAuthpageState extends State<PhoneAuthpage> {
               children: [
                 Image.asset('assets/img1.png',
                   width: MediaQuery.of(context).size.width, // Full width of the screen
-                  height: MediaQuery.of(context).size.height*1.5, // 50% of the screen height
+                  height: MediaQuery.of(context).size.height*0.5, // 50% of the screen height
                   fit: BoxFit.cover,
                 ),
               Text("Phone Verification",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
