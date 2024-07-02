@@ -1,23 +1,20 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
+import 'package:pinput/pinput.dart';
 import 'Phoneauth.dart';
-import 'opt.dart';
+import 'otp.dart';
 
-void main()  {
+void main() {
+  runApp(MaterialApp(
 
 
-    runApp(MaterialApp(
-      initialRoute: 'PhoneAuthpage',
-      routes: {
-        'PhoneAuthpage':(context) => PhoneAuthpage(),
-        'otp': (contex) => otp(),
+    home: const Phonepage(),
+    routes: {
 
-      },
-      home: const PhoneAuthpage(),
-    ));
-  }
-
+      'otp': (context) => const otp(),
+    },
+  ));
+}
 
 
 

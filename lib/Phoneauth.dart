@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class PhoneAuthpage extends StatefulWidget {
-  const PhoneAuthpage({super.key});
+class Phonepage extends StatefulWidget {
+  const Phonepage({super.key});
 
   @override
-  State<PhoneAuthpage> createState() => _PhoneAuthpageState();
+  State<Phonepage> createState() => _PhonepageState();
 }
 
-class _PhoneAuthpageState extends State<PhoneAuthpage> {
+class _PhonepageState extends State<Phonepage> {
   late TextEditingController _controller;
   late TextEditingController _controller1;
   @override
@@ -82,7 +82,13 @@ class _PhoneAuthpageState extends State<PhoneAuthpage> {
                 SizedBox(
                   height: 35,
                   width: double.infinity,
-                  child: ElevatedButton(onPressed: () {}, child: Text("Send Code",style: TextStyle(color: Colors.white),),style: ElevatedButton.styleFrom(
+                  child: ElevatedButton(onPressed: ()
+
+                  {
+                    print("Button Pressed!");
+                    Navigator.pushNamed(context, "otp");
+                  },
+                    child: Text("Send Code",style: TextStyle(color: Colors.white),),style: ElevatedButton.styleFrom(
                     alignment: Alignment.center,
                     backgroundColor: Colors.blue,
                   ),
